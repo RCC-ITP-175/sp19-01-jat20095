@@ -16,46 +16,46 @@ q
 #    What is the command to list files and folders in
 #    a directory?
 #############################################################
-
+ls
 
 #############################################################
 #    What is the command to list all files and folders 
 #    in a directory, including hidden files?
 #############################################################
-
+ls -a
 
 #############################################################
 #    What is the command to list all files and folders
 #    in a directory, including hidden files, and the
 #    permissions and owner of the files?
 #############################################################
-
+ls -al
 
 #############################################################
 #    What is the command to list all files and folders
 #    in a directory sorted by when they were last
 #    modified?
 #############################################################
-
+ls -t
 
 #############################################################
 #    What is the command to find where you are currently
 #    located in filesystem?
 #############################################################
-
+pwd
 
 #############################################################
 #    You are in the folder /course/week1 and need to move
 #    to the /course/week2 directory. How do you do that?
 #############################################################
-
+cd /course/week2
 
 #############################################################
 #    You are in the /course directory and need to create 
 #    a /course/week3 directory which does not currently
 #    exist. How do you do that?
 #############################################################
-
+mdir /course/week3
 
 #############################################################
 #    You are in the /course/2019/spring/week2/project
@@ -63,14 +63,15 @@ q
 #    /course/2019/spring/week2 directory. How do you
 #    do that?
 #############################################################
-
+cd ..
 
 #############################################################
 #    You are in the /course/week2 directory and need
 #    to create an empty quiz.txt file. How do you do that?
 #############################################################
-
-
+vim quiz.txt 
+or
+touch quiz.txt
 #############################################################
 #    The directory you are working in currently has these files.
 #           -rw-rw-r-- 1 app  app   875 Jul 26 18:02 answers.txt
@@ -80,7 +81,7 @@ q
 #           -rw-rw-r-- 1 app  app   201 Jul 26 18:02 scripts.sh
 #    How would you delete the answers.txt file? 
 #############################################################
-
+rm answers.txt
 
 #############################################################
 #    The directory you are working in currently has these files.
@@ -90,7 +91,7 @@ q
 #           -rw-rw-r-- 1 app  app   201 Jul 26 18:02 scripts.sh
 #    How would you copy the quiz.txt file into a new file test.txt?
 #############################################################
-
+cp quiz.txt test.txt
 
 #############################################################
 #    The directory you are working in currently has these files and directories.
@@ -102,7 +103,7 @@ q
 #           drwxrwxr-x 2 app  app  1024 Jul 13  2017 views
 #     How would you copy all 4 html files into the public directory?
 #############################################################
-
+mv -t public index.html quiz.html project.html lesson.html
 
 #############################################################
 #    The directory you are working in currently has these files and directories.
@@ -114,6 +115,6 @@ q
 #           drwxrwxr-x 2 app  app  1024 Jul 13  2017 views
 #     How would you move all 4 html files into the public directory?
 #############################################################
-
+mv -t public index.html quiz.html project.html lesson.html
 
 
